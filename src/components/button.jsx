@@ -35,8 +35,9 @@ const Button = ({
     switch (type) {
       case "primary":
         return {
-          backgroundColor: isHovered ? "#00903e" : "#00AF50",
-          color: "#FFFFFF",
+          backgroundColor: isHovered ? "#0C0932" : "#00AF50",
+          color: isHovered? "#00AF50": color,
+          
           width,
           height,
           fontSize,
@@ -46,8 +47,8 @@ const Button = ({
         };
       case "secondary":
         return {
-          backgroundColor: isHovered ? "#FFFFF0" : "#FFFFF0",
-          color: "#979797",
+          backgroundColor: isHovered ? "#0C0932" : "#FFFFF0",
+          color: isHovered? "00AF50": color,
           width,
           height,
           fontSize,
@@ -117,7 +118,10 @@ const Button = ({
         fontSize,
         color,
         border: borderColor,
-        ...getButtonStyles()
+        ...getButtonStyles(),
+        border: isHovered ? "1px solid #07C168" : "none",
+ 
+        
       }}
     >
       <div className="flex gap-1 items-center">

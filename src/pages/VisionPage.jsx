@@ -63,7 +63,7 @@ const VisionPage = () => {
                 type="primary"
                 label="Buy Frags "
                 action={() => alert("Button clicked!")}
-                color="#0C0932"
+                // color="#0C0932"
                 fontWeight="700"
                 className="px-8 py-2.5 rounded-[50px] w-[100%] md:w-auto h-[52px]"
               />

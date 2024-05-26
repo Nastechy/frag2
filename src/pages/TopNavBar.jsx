@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import CloseIcon from "@mui/icons-material/Close";
 import logo from "../../public/images/frag-logo.png";
+import logoM from "../../public/images/frag-logo-m.png";
+
 import Button from "@/components/button";
 
 const TopNav = () => {
@@ -16,7 +18,7 @@ const TopNav = () => {
   };
 
   return (
-    <div className="app_bg_settings relative flex justify-center flex-col items-center">
+    <div className="app_bg_settings relative flex justify-center flex-col items-center h-[120px]">
       {/* <Image src={phones} alt="Phones" layout="responsive" /> */}
 
       <div
@@ -25,7 +27,8 @@ const TopNav = () => {
       >
         <div className="w-[100%] flex items-center justify-between md:justify-start md:w-[50%] h-fit">
           <div className="flex gap-2 items-center">
-            <Image src={logo} alt="right-arrow" layout="fragvest-logo" />
+            <Image src={logo} alt="right-arrow" layout="fragvest-logo" className="hidden md:block" />
+            <Image src={logoM} alt="right-arrow" layout="fragvest-logo" className="block md:hidden" />
           </div>
           <div className="md:hidden flex items-center justify-end">
             <button onClick={toggleMenu} className="focus:outline-none">

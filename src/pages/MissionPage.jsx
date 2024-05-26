@@ -14,7 +14,7 @@ const MissionPage = () => {
   const router = useRouter()
   return (
     <div className="app_bg_settings flex justify-center flex-col items-center">
-      <div className="w-[100%] mt-4">
+      <div className="w-[100%] py-20">
         <div className="md:w-[100%] w-[100%] h-fit flex justify-center">
           <div className="flex flex-col items-center gap-4 ">
             <div className="text-[#0C0932] md:text-[50px] text-[35px] text-center font-[700]">
