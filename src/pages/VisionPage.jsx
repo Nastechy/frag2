@@ -5,7 +5,7 @@ import React from "react";
 
 const VisionPage = () => {
   return (
-    <div className="allPadding flex justify-center flex-col items-center bg-[#FFFEF0]">
+    <div className="allPadding flex justify-center flex-col items-center">
       <div className="w-[100%] md:w-[1200px] mt-12 ">
         <div className="md:w-[100%] w-[100%] h-fit bg-[#0C0932] p-10 flex flex-col md:flex-row items-center">
           <div className="md:w-[50%] w-[100%] md:p-10 p-2">

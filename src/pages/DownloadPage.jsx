@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -6,20 +6,28 @@ import phones from "../../public/images/TwoPhones.png";
 import Button from "@/components/button";
 import apple from "../../public/images/appleLogo.png";
 import andriod from "../../public/images/androidLogo.png";
+import Link from "next/link";
 
 const DownloadPage = () => {
   return (
-    <div className="allPadding flex justify-center items-center bg-[#FFFEF0]">
-      <div className="w-[100%] md:w-[1200px] h-auto mt-16">
-        <div className="md:w-[100%] w-[100%] h-[50%] border-2 rounded-[20px] bg-[#0C0932] flex flex-col md:flex-row items-center">
+    <div  className="allPadding flex justify-center items-center h-[422px] mt-[120px]">
+      <div className="w-[100%] md:w-[1200px] mt-16 relative h-[100%]">
+        <div className="md:w-[100%] w-[100%] border-2 rounded-[20px] bg-[#0C0932] flex flex-col md:flex-row items-center h-[100%]">
           <div className="w-[100%] md:hidden mb-6">
             <Image src={phones} alt="Phones" layout="responsive" />
           </div>
           <div className="md:w-[60%] w-[100%] md:p-10 p-2">
             <div className="text-[30px] font-[400] text-[#07C168]">
-              Download the Fragvest App
+              <Link
+                href={
+                  "https://play.google.com/store/apps/details?id=com.fragvest.fragvest_mobile&pli=1"
+                }
+              >
+                {" "}
+                Download the Fragvest App
+              </Link>
             </div>
-            <div className="text-[24px] font-[400] text-[#07C168] mt-4">
+            <div className="text-[24px] font-[400] text-[#FFFFFF] my-10">
               Open an account now and follow the simpler way to your real estate
               goals.
             </div>
@@ -54,7 +62,7 @@ const DownloadPage = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-[40%] w-[100%] hidden md:block">
+          <div className="md:w-[40%] w-[100%] hidden md:block md:absolute md:right-[10px] bottom-[0px]">
             <Image src={phones} alt="Phones" layout="responsive" />
           </div>
         </div>

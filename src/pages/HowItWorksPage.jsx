@@ -36,15 +36,11 @@ const HowItWorksPage = () => {
         </div>
         <div className="md:w-[50%] w-[100%] h-fit flex items-center justify-start">
           <div className="md:w-[580px] w-[100%] gap-2 h-fit rounded-[20px] bg-[#0B1B38] flex flex-col items-center justify-center md:p-32 p-10">
-            <div>
-            <Button
-                type="secondary"
-                label="input property address "
-                action={() => alert("Button clicked!")}
-                color="#0C0932"
-                fontWeight="700"
-                fontSize="12px"
-                className="px-6 py-2 rounded-[50px]"
+            <div style={{width: '100%'}}>
+              <input
+                type="text"
+                placeholder="input property address"
+                className="bg-[#f8f8e6] text-[#9b9b9b] rounded-full py-2 px-4 text-lg w-full focus:outline-none text-center"
               />
             </div>
             <div>

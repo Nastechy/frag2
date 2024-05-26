@@ -8,10 +8,12 @@ import frame4 from "../../public/images/Frame44.png";
 import Button from "@/components/button";
 import apple from "../../public/images/appleLogo.png";
 import andriod from "../../public/images/androidLogo.png";
+import { useRouter } from "next/navigation";
 
 const MissionPage = () => {
+  const router = useRouter()
   return (
-    <div className="allPadding flex justify-center flex-col items-center bg-[#FFFEF0]">
+    <div className="allPadding flex justify-center flex-col items-center">
       <div className="w-[100%] md:w-[1200px] mt-4">
         <div className="md:w-[100%] w-[100%] h-fit flex justify-center">
           <div className="flex flex-col items-center gap-4 ">
@@ -38,7 +40,7 @@ const MissionPage = () => {
                 <Button
                   type="outline"
                   label="Download App "
-                  action={() => alert("Button clicked!")}
+                  action={() => router.push('https://play.google.com/store/apps/details?id=com.fragvest.fragvest_mobile&pli=1')}
                   color="#0C0932"
                   fontWeight="700"
                   leftIcon1={apple}

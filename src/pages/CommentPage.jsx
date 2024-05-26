@@ -11,19 +11,19 @@ const CommentPage = () => {
       image: image,
       user: "John Doe",
       comment:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat."
+        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat. Exercitation veniam consequat."
     },
     {
       image: image,
       user: "John Doe",
       comment:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat."
+        "Velit officia consequat duis, Amet minim mollit non fficia consequat duis, deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat."
     },
     {
       image: image,
       user: "John Doe",
       comment:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat."
+        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat Exercitation veniam consequat."
     }
   ];
 
@@ -42,7 +42,7 @@ const CommentPage = () => {
   };
 
   return (
-    <div className="allPadding flex justify-center flex-col items-center bg-[#FFFEF0]">
+    <div className="allPadding flex justify-center flex-col items-center">
       <div className="w-[100%] md:w-[1200px] mt-12">
         <div className="md:w-[100%] w-[100%] flex justify-center">
           <div className="flex items-center">
@@ -60,13 +60,14 @@ const CommentPage = () => {
                 comment={cardsData[currentIndex].comment}
               />
             </div>
-            <div className="hidden md:flex gap-2">
+            <div className="hidden md:flex gap-6 flex items-center">
               {cardsData.map((card, index) => (
                 <CommentCard
                   key={index}
                   image={card.image}
                   user={card.user}
                   comment={card.comment}
+                  position={index}
                 />
               ))}
             </div>

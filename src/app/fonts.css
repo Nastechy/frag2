@@ -13,5 +13,144 @@
     font-weight: bold;
     font-style: normal;
   }
-  
+
+  @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Black.otf') format('opentype');
+     font-weight: 900;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Black Italic.otf') format('opentype');
+     font-weight: 900;
+     font-style: italic;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Bold.otf') format('opentype');
+     font-weight: bold;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Bold Italic.otf') format('opentype');
+     font-weight: bold;
+     font-style: italic;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Book.otf') format('opentype');
+     font-weight: 400;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Book Italic.otf') format('opentype');
+     font-weight: 400;
+     font-style: italic;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma ExtraBold.otf') format('opentype');
+     font-weight: 800;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma ExtraBold Italic.otf') format('opentype');
+     font-weight: 800;
+     font-style: italic;
+   }
+   
+   /* @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Heavy.otf') format('opentype');
+     font-weight: 700;
+     font-style: normal;
+   } */
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Heavy Italic.otf') format('opentype');
+     font-weight: 700;
+     font-style: italic;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Italic.otf') format('opentype');
+     font-weight: normal;
+     font-style: italic;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Light.otf') format('opentype');
+     font-weight: 300;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Light Italic.otf') format('opentype');
+     font-weight: 300;
+     font-style: italic;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Medium.otf') format('opentype');
+     font-weight: 500;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Medium Italic.otf') format('opentype');
+     font-weight: 500;
+     font-style: italic;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Regular.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma SemiBold.otf') format('opentype');
+     font-weight: 600;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma SemiBold Italic.otf') format('opentype');
+     font-weight: 600;
+     font-style: italic;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Thin.otf') format('opentype');
+     font-weight: 100;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Axiforma';
+     src: url('../../public/fonts/axiforma/Kastelov  Axiforma Thin Italic.otf') format('opentype');
+     font-weight: 100;
+     font-style: italic;
+   }
   

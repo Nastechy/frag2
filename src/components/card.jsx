@@ -12,7 +12,7 @@ const Card = ({ image, title, subtitle }) => {
       />
       <div className="mt-6">
         <h2 className="text-xl text-[#07C168] font-bold mb-4">{title}</h2>
-        <p className="text-[#FFFFFF]">{subtitle}</p>
+        <p className="text-[#FFFFFF] mt-[20px]">{subtitle}</p>
       </div>
     </div>
   );

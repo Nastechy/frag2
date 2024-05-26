@@ -51,7 +51,7 @@ const TransformsPage = () => {
   ];
 
   return (
-    <div className="allPadding flex justify-center flex-col items-center bg-[#FFFEF0]">
+    <div className="allPadding flex justify-center flex-col items-center mt-[60px]">
       <div className="w-[100%] md:w-[1200px] mt-12 ">
         <div className="md:w-[100%] w-[100%] h-fit flex justify-center items-center mb-12">
           <div className="md:text-[46px] text-[35px] text-[#0C0932] text-center md:text-start font-[700]">

@@ -13,8 +13,17 @@ const SafetyPage = () => {
               Learn about our commitment to legally securing your real estate
               assets, your funds and the personal information you entrust to us.{" "}
             </div>
-            <div >
-              <div className="text-[#07C168]">Learn more</div>             
+            <div>
+              <div
+                className="text-[#07C168]"
+                style={{
+                  textDecoration: "underline",
+                  textDecorationColor: "#07C168",
+                  textUnderlineOffset: '4px'
+                }}
+              >
+                Learn more
+              </div>
             </div>
           </div>
         </div>

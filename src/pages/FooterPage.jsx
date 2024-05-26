@@ -8,7 +8,7 @@ import linkdin from "../../public/images/linkedin.png";
 
 const FooterPage = () => {
   return (
-    <div className="allPadding flex justify-center flex-col items-center bg-[#FFFEF0]">
+    <div className="allPadding flex justify-center flex-col items-center">
       <div className="w-[100%] md:w-[1200px] md:mt-24 mt-10">
         <div className="md:w-[100%] w-[100%] h-fit flex flex-col md:flex-row items-center justify-between">
           <div className="flex gap-2 items-center w-[100%]">
@@ -34,16 +34,16 @@ const FooterPage = () => {
             <div className="md:text-[14px] text-[12px] font-[700] text-[#07C168]">
               Company
             </div>
-            <div className="md:text-[14px] text-[12px] font-[400] text-[#0C0932CC]">
+            <div className="cursor-pointer md:text-[14px] text-[12px] font-[400] text-[#0C0932CC]">
               About Us
             </div>
-            <div className="md:text-[14px] text-[10px] font-[400] text-[#0C0932CC]">
+            <div className="cursor-pointer md:text-[14px] text-[10px] font-[400] text-[#0C0932CC]">
               Frags
             </div>
-            <div className="md:text-[14px] text-[12px] font-[400] text-[#0C0932CC]">
+            <div className="cursor-pointer md:text-[14px] text-[12px] font-[400] text-[#0C0932CC]">
               Blog
             </div>
-            <div className="md:text-[14px] text-[12px] font-[400] text-[#0C0932CC]">
+            <div className="cursor-pointer md:text-[14px] text-[12px] font-[400] text-[#0C0932CC]">
               FAQs
             </div>
           </div>
@@ -51,13 +51,13 @@ const FooterPage = () => {
             <div className="md:text-[14px] text-[12px] font-[700] text-[#07C168]">
               Legal
             </div>
-            <div className="md:text-[14px] text-[10px] font-[400] text-[#0C0932CC]">
+            <div className="cursor-pointer md:text-[14px] text-[10px] font-[400] text-[#0C0932CC]">
               Security
             </div>
-            <div className="md:text-[14px] text-[10px] font-[400] text-[#0C0932CC]">
+            <div className="cursor-pointer md:text-[14px] text-[10px] font-[400] text-[#0C0932CC]">
               Privacy Policy
             </div>
-            <div className="md:text-[14px] text-[10px] font-[400] text-[#0C0932CC]">
+            <div className="cursor-pointer md:text-[14px] text-[10px] font-[400] text-[#0C0932CC]">
               Terms and Conditions
             </div>
           </div>
@@ -66,10 +66,10 @@ const FooterPage = () => {
               Contact Us
             </div>
             <div className="flex gap-2">
-              <Image src={instagram} alt="" />
-              <Image src={twitter} alt="" />
-              <Image src={facebook} alt="" />
-              <Image src={linkdin} alt="" />
+              <Image className="cursor-pointer" src={instagram} alt="" />
+              <Image className="cursor-pointer" src={twitter} alt="" />
+              <Image className="cursor-pointer" src={facebook} alt="" />
+              <Image className="cursor-pointer" src={linkdin} alt="" />
             </div>
             <div className="md:text-[14px] text-[10px] font-[400] text-[#0C0932CC]">
               112a Association Rd, Dolphin <br /> Estate, Ikoyi, Lagos, Nigeria.
