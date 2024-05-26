@@ -3,20 +3,22 @@
 import Image from "next/image";
 import React from "react";
 import phones from "../../public/images/TwoPhones.png";
+import mobPhones from "../../public/images/mob-app-img.png";
 import Button from "@/components/button";
 import apple from "../../public/images/appleLogo.png";
 import andriod from "../../public/images/androidLogo.png";
 import Link from "next/link";
 
+
 const DownloadPage = () => {
   return (
-    <div  className="allPadding flex justify-center items-center h-[422px] mt-[120px]">
-      <div className="w-[100%] md:w-[1200px] mt-16 relative h-[100%]">
+    <div className="app_bg_settings flex justify-center items-center h-[762px] md:h-[422px] mt-[120px] mb-10 md:mb-0">
+      <div className="w-[100%] mt-16 relative h-[100%]">
         <div className="md:w-[100%] w-[100%] border-2 rounded-[20px] bg-[#0C0932] flex flex-col md:flex-row items-center h-[100%]">
-          <div className="w-[100%] md:hidden mb-6">
-            <Image src={phones} alt="Phones" layout="responsive" />
+          <div className="w-[100%] md:hidden mb-6 mt-[-140px]">
+            <Image src={mobPhones} alt="Phones" layout="responsive" />
           </div>
-          <div className="md:w-[60%] w-[100%] md:p-10 p-2">
+          <div className="md:w-[60%] w-[100%] md:p-10 p-2 text-left md:text-left">
             <div className="text-[30px] font-[400] text-[#07C168]">
               <Link
                 href={
@@ -43,7 +45,7 @@ const DownloadPage = () => {
                   columnGap="12px"
                   color="#0C0932"
                   fontWeight="700"
-                  className="px-6 py-2.5 rounded-[50px]"
+                  className="px-6 py-2.5 rounded-[50px] w-[100%] md:w-unset h-[52px]"
                 />
               </div>
               <div>
@@ -57,13 +59,18 @@ const DownloadPage = () => {
                   columnGap="12px"
                   color="#0C0932"
                   fontWeight="700"
-                  className="px-6 py-2.5 rounded-[50px]"
+                  className="px-6 py-2.5 rounded-[50px] w-[100%] md:w-unset h-[52px]"
                 />
               </div>
             </div>
           </div>
-          <div className="md:w-[40%] w-[100%] hidden md:block md:absolute md:right-[10px] bottom-[0px]">
-            <Image src={phones} alt="Phones" layout="responsive" />
+          <div className="md:w-[40%] w-[100%] hidden md:block md:absolute md:right-[10px] md:bottom-[0px]">
+            <div className="">
+              {" "} 
+              {/* <Image className=" " src={mobPhones} alt="Phones" layout="responsive" /> */}
+
+              <Image className="hidden md:block" src={phones} alt="Phones" layout="responsive" />
+            </div>
           </div>
         </div>
       </div>

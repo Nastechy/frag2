@@ -8,18 +8,21 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 const CommentPage = () => {
   const cardsData = [
     {
+      id: 1,
       image: image,
       user: "John Doe",
       comment:
         "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat. Exercitation veniam consequat."
     },
     {
+      id: 2,
       image: image,
       user: "John Doe",
       comment:
         "Velit officia consequat duis, Amet minim mollit non fficia consequat duis, deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat."
     },
     {
+      id: 3,
       image: image,
       user: "John Doe",
       comment:
@@ -42,11 +45,11 @@ const CommentPage = () => {
   };
 
   return (
-    <div className="allPadding flex justify-center flex-col items-center">
-      <div className="w-[100%] md:w-[1200px] mt-12">
+    <div className="app_bg_settings flex justify-center flex-col items-center">
+      <div className="w-[100%] mt-12">
         <div className="md:w-[100%] w-[100%] flex justify-center">
           <div className="flex items-center">
-            <div className="text-[#0C0932] md:text-[50px] text-[35px] font-[700]">
+            <div className="text-[#0C0932] text-center md:text-[50px] text-[35px] font-[700]">
               Real Insights from Real Users
             </div>
           </div>
@@ -58,16 +61,17 @@ const CommentPage = () => {
                 image={cardsData[currentIndex].image}
                 user={cardsData[currentIndex].user}
                 comment={cardsData[currentIndex].comment}
+                position={cardsData[currentIndex].id}
               />
             </div>
             <div className="hidden md:flex gap-6 flex items-center">
               {cardsData.map((card, index) => (
                 <CommentCard
-                  key={index}
+                  key={card.id}
                   image={card.image}
                   user={card.user}
                   comment={card.comment}
-                  position={index}
+                  position={card.id}
                 />
               ))}
             </div>

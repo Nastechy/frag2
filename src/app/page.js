@@ -10,7 +10,7 @@ import VisionPage from "@/pages/VisionPage";
 
 export default function Home() {
   return (
-    <div className=" w-[100%]">
+    <div className="w-[100%] flex justify-center flex-col items-center">
       <div>
         <IntroductionPage />
       </div>
@@ -18,15 +18,17 @@ export default function Home() {
         <HowItWorksPage />
       </div>
       <MissionPage />
-      <div>
+      <div
+        className="w-[100%] flex justify-center flex-col items-center"
+      >
         <VisionPage />
       </div>
       <div>
         <TransformsPage />
       </div>
-      <SafetyPage/>
-      <CommentPage/>
-      <DownloadPage/>
+      <SafetyPage />
+      <CommentPage />
+      <DownloadPage />
     </div>
   );
 }

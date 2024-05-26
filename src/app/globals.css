@@ -37,7 +37,13 @@ body {
 
 .allPadding{
   padding: 10px;
+  
+}
 
+@media screen and (max-width: 500px) {
+  .allPadding {
+    padding: 0px;
+  }
 }
 
 .card {
@@ -46,4 +52,22 @@ body {
   border: 1px solid #1936db;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.app_bg_settings {
+  max-width: 1200px !important;
+  /* background-color: #ffffff; */
+  /* border: 2px solid rgb(0, 255, 13); */
+  width: 100%;
+  text-align: left;
+  /* font-family: "Poppins", sans-serif; */
+  font-style: normal;
+  /* overflow: hidden; */
+}
+
+@media screen and (max-width: 772px) {
+  .app_bg_settings {
+    padding: 0px 15px;
+  }
 }

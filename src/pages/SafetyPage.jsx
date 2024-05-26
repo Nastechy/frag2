@@ -2,10 +2,10 @@ import React from "react";
 
 const SafetyPage = () => {
   return (
-    <div className="allPadding flex justify-center items-center bg-[#0C0932]">
-      <div className="w-[100%] md:w-[1200px] mt-12 mb-12">
+    <div className="flex justify-center items-center bg-[#0C0932] w-[100%]">
+      <div className="w-[100%] mt-12 mb-12">
         <div className="md:w-[100%] w-[100%] h-fit flex justify-center">
-          <div className="flex flex-col items-center gap-4 ">
+          <div className="app_bg_settings flex flex-col items-center gap-4 ">
             <div className="text-[#FFFFFF] md:text-[50px] text-[35px] text-center font-[700]">
               Not Just Simpler, But Safer Real Estate
             </div>
@@ -19,7 +19,7 @@ const SafetyPage = () => {
                 style={{
                   textDecoration: "underline",
                   textDecorationColor: "#07C168",
-                  textUnderlineOffset: '4px'
+                  textUnderlineOffset: "4px",
                 }}
               >
                 Learn more

@@ -51,8 +51,8 @@ const TransformsPage = () => {
   ];
 
   return (
-    <div className="allPadding flex justify-center flex-col items-center mt-[60px]">
-      <div className="w-[100%] md:w-[1200px] mt-12 ">
+    <div className="app_bg_settings flex justify-center flex-col items-center mt-[60px]">
+      <div className="w-[100%] mt-12 ">
         <div className="md:w-[100%] w-[100%] h-fit flex justify-center items-center mb-12">
           <div className="md:text-[46px] text-[35px] text-[#0C0932] text-center md:text-start font-[700]">
             How Fragvest Transforms Your Real Estate Game
@@ -70,15 +70,15 @@ const TransformsPage = () => {
             ))}
           </div>
         </div>
-        <div className="flex items-center justify-center p-20">
-          <div>
+        <div className="w-[100%] flex items-center justify-center py-20">
+          <div className="w-[100%] md:w-auto">
             <Button
               type="primary"
-              label="Open an account today "
+              label="Open an account today"
               action={() => alert("Button clicked!")}
               color="#0C0932"
               fontWeight="700"
-              className="px-8 py-2.5 rounded-[50px]"
+              className="px-8 py-2.5 rounded-[50px] w-[100%] md:w-auto h-[52px]"
             />
           </div>
         </div>

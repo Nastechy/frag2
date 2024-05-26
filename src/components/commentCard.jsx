@@ -7,16 +7,16 @@ const CommentCard = ({ image, user, comment, position }) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
-    setIsActive(!isActive);
+    // setIsActive(!isActive);
   };
 
   return (
     <div
       onClick={handleClick}
       className={`${
-        position == 1 ? "h-[270px] text-[#07C168]" : "h-[242px] text-[#0C0932]"
+        position == 2 ? "h-[290px] md:h-[270px] text-[#07C168]" : "h-[262px] md:h-[242px] text-[#0C0932]"
       } border border-[#0C093280] rounded-[9px] cursor-pointer w-[100%] md:w-[300px] md:p-6 p-8
-        ${isActive || position === 1 ? "bg-[#0C0932] md:w-[350px]" : "bg-none"}
+        ${isActive || position === 2 ? "bg-[#0C0932] md:w-[350px]" : "bg-none"}
       `}
     >
       {/* <p className={`${position === 1 ? "text-[#07C168]" : "text-[#0C0932]"}`}>
